@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441A9FA21A97D4890081ADD9 /* FoodItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441A9FA11A97D4890081ADD9 /* FoodItemCell.xib */; };
+		441A9FA51A97D8E00081ADD9 /* FoodItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 441A9FA41A97D8E00081ADD9 /* FoodItemCell.m */; };
+		441A9FA81A97EFF80081ADD9 /* FoodItemDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 441A9FA71A97EFF80081ADD9 /* FoodItemDetail.m */; };
 		44B2D14C1A97A6810027EB08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B2D14B1A97A6810027EB08 /* main.m */; };
 		44B2D14F1A97A6810027EB08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B2D14E1A97A6810027EB08 /* AppDelegate.m */; };
 		44B2D1521A97A6810027EB08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B2D1511A97A6810027EB08 /* ViewController.m */; };
@@ -14,6 +17,8 @@
 		44B2D1571A97A6810027EB08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B2D1561A97A6810027EB08 /* Images.xcassets */; };
 		44B2D15A1A97A6810027EB08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B2D1581A97A6810027EB08 /* LaunchScreen.xib */; };
 		44B2D1661A97A6820027EB08 /* LivsmedelsappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B2D1651A97A6820027EB08 /* LivsmedelsappTests.m */; };
+		44B2D1711A97A78D0027EB08 /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B2D1701A97A78D0027EB08 /* FoodItem.m */; };
+		44B2D1741A97A9EF0027EB08 /* FoodItemsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B2D1731A97A9EF0027EB08 /* FoodItemsTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		441A9FA11A97D4890081ADD9 /* FoodItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodItemCell.xib; sourceTree = "<group>"; };
+		441A9FA31A97D8E00081ADD9 /* FoodItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItemCell.h; sourceTree = "<group>"; };
+		441A9FA41A97D8E00081ADD9 /* FoodItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItemCell.m; sourceTree = "<group>"; };
+		441A9FA61A97EFF80081ADD9 /* FoodItemDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItemDetail.h; sourceTree = "<group>"; };
+		441A9FA71A97EFF80081ADD9 /* FoodItemDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItemDetail.m; sourceTree = "<group>"; };
 		44B2D1461A97A6810027EB08 /* Livsmedelsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livsmedelsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B2D14A1A97A6810027EB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44B2D14B1A97A6810027EB08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +50,10 @@
 		44B2D15F1A97A6820027EB08 /* LivsmedelsappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivsmedelsappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B2D1641A97A6820027EB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44B2D1651A97A6820027EB08 /* LivsmedelsappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LivsmedelsappTests.m; sourceTree = "<group>"; };
+		44B2D16F1A97A78D0027EB08 /* FoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItem.h; sourceTree = "<group>"; };
+		44B2D1701A97A78D0027EB08 /* FoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItem.m; sourceTree = "<group>"; };
+		44B2D1721A97A9EF0027EB08 /* FoodItemsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItemsTable.h; sourceTree = "<group>"; };
+		44B2D1731A97A9EF0027EB08 /* FoodItemsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItemsTable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +103,15 @@
 				44B2D1561A97A6810027EB08 /* Images.xcassets */,
 				44B2D1581A97A6810027EB08 /* LaunchScreen.xib */,
 				44B2D1491A97A6810027EB08 /* Supporting Files */,
+				44B2D16F1A97A78D0027EB08 /* FoodItem.h */,
+				44B2D1701A97A78D0027EB08 /* FoodItem.m */,
+				44B2D1721A97A9EF0027EB08 /* FoodItemsTable.h */,
+				44B2D1731A97A9EF0027EB08 /* FoodItemsTable.m */,
+				441A9FA11A97D4890081ADD9 /* FoodItemCell.xib */,
+				441A9FA31A97D8E00081ADD9 /* FoodItemCell.h */,
+				441A9FA41A97D8E00081ADD9 /* FoodItemCell.m */,
+				441A9FA61A97EFF80081ADD9 /* FoodItemDetail.h */,
+				441A9FA71A97EFF80081ADD9 /* FoodItemDetail.m */,
 			);
 			path = Livsmedelsapp;
 			sourceTree = "<group>";
@@ -199,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441A9FA21A97D4890081ADD9 /* FoodItemCell.xib in Resources */,
 				44B2D1551A97A6810027EB08 /* Main.storyboard in Resources */,
 				44B2D15A1A97A6810027EB08 /* LaunchScreen.xib in Resources */,
 				44B2D1571A97A6810027EB08 /* Images.xcassets in Resources */,
@@ -219,7 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441A9FA51A97D8E00081ADD9 /* FoodItemCell.m in Sources */,
+				44B2D1711A97A78D0027EB08 /* FoodItem.m in Sources */,
 				44B2D1521A97A6810027EB08 /* ViewController.m in Sources */,
+				44B2D1741A97A9EF0027EB08 /* FoodItemsTable.m in Sources */,
+				441A9FA81A97EFF80081ADD9 /* FoodItemDetail.m in Sources */,
 				44B2D14F1A97A6810027EB08 /* AppDelegate.m in Sources */,
 				44B2D14C1A97A6810027EB08 /* main.m in Sources */,
 			);
@@ -345,7 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Livsmedelsapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Livsmedelsapp;
 			};
 			name = Debug;
 		};
@@ -355,7 +383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Livsmedelsapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Livsmedelsapp;
 			};
 			name = Release;
 		};
@@ -373,7 +401,7 @@
 				);
 				INFOPLIST_FILE = LivsmedelsappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LivsmedelsappTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Livsmedelsapp.app/Livsmedelsapp";
 			};
 			name = Debug;
@@ -388,7 +416,7 @@
 				);
 				INFOPLIST_FILE = LivsmedelsappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LivsmedelsappTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Livsmedelsapp.app/Livsmedelsapp";
 			};
 			name = Release;
@@ -412,6 +440,7 @@
 				44B2D16B1A97A6820027EB08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44B2D16C1A97A6820027EB08 /* Build configuration list for PBXNativeTarget "LivsmedelsappTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +449,7 @@
 				44B2D16E1A97A6820027EB08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
