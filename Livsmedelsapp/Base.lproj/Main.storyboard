@@ -37,7 +37,11 @@
                             <outlet property="delegate" destination="7iC-Oy-vIt" id="CWy-jm-04n"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="add" id="uIe-wY-j6R"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Livsmedel" id="fwF-VQ-U3V"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="Jeb-0D-4Lc" id="giO-It-mYk"/>
@@ -246,6 +250,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="cVz-dE-d72">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="7iC-Oy-vIt" kind="relationship" relationship="rootViewController" id="a3U-gi-t0M"/>
                     </connections>

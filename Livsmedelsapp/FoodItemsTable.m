@@ -27,6 +27,7 @@ NSArray *searchResults;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.toolbarHidden = NO;
     //self.tableView.rowHeight = 75;
     FoodItem *item1 = [[FoodItem alloc] initWithName:@"Knäckebröd" energy:345.0f fat:2.4f fibre:14.5f water:7.2f protein:9.6f carbs:63.3f];
     FoodItem *item2 = [[FoodItem alloc] initWithName:@"Vetemjöl" energy: 352.0f fat:1.9f fibre:3.6f water:13.2f protein:8.5f carbs:72.3f];
