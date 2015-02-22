@@ -10,6 +10,7 @@
 #import "FoodItem.h"
 #import "FoodItemCell.h"
 #import "FoodItemDetail.h"
+#import "FavoritesTable.h"
 
 @interface FoodItemsTable ()
 
@@ -41,6 +42,10 @@ NSArray *searchResults;
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+/*- (IBAction)favoritesButtonPressed:(id)sender {
+    FavoritesTable *favoritesView = [[FavoritesTable alloc] initWithNibName:@"UITableViewControlle" bundle: [NSBundle mainBundle]];
+    [self.view addSubview: favoritesView.view];
+}*/
 
 
 - (void)searchDisplayController:(UISearchDisplayController *)controller didLoadSearchResultsTableView:(UITableView *)tableView
@@ -153,9 +158,14 @@ NSArray *searchResults;
     if ([segue.identifier isEqualToString:@"Detail"]){
         FoodItemDetail *detailView = [segue destinationViewController];
         detailView.item = [foodItems objectAtIndex:indexPath.row];
+    } else if([segue.identifier isEqualToString:@"Favorite"]) {
+        FavoritesTable *favoritesView = [segue destinationViewController];
+        [self.view addSubview: favoritesView.view];
+        
     } else {
         NSLog(@"You forgot the segue %@",segue);
     }
+    
 }
 
 // This method was required to get segue working. Why????????

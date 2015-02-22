@@ -10,6 +10,7 @@
 		441A9FA21A97D4890081ADD9 /* FoodItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441A9FA11A97D4890081ADD9 /* FoodItemCell.xib */; };
 		441A9FA51A97D8E00081ADD9 /* FoodItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 441A9FA41A97D8E00081ADD9 /* FoodItemCell.m */; };
 		441A9FA81A97EFF80081ADD9 /* FoodItemDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 441A9FA71A97EFF80081ADD9 /* FoodItemDetail.m */; };
+		441AA0521A9A77710081ADD9 /* FavoritesTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 441AA0511A9A77710081ADD9 /* FavoritesTable.m */; };
 		44B2D14C1A97A6810027EB08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B2D14B1A97A6810027EB08 /* main.m */; };
 		44B2D14F1A97A6810027EB08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B2D14E1A97A6810027EB08 /* AppDelegate.m */; };
 		44B2D1521A97A6810027EB08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B2D1511A97A6810027EB08 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		441A9FA41A97D8E00081ADD9 /* FoodItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItemCell.m; sourceTree = "<group>"; };
 		441A9FA61A97EFF80081ADD9 /* FoodItemDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItemDetail.h; sourceTree = "<group>"; };
 		441A9FA71A97EFF80081ADD9 /* FoodItemDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItemDetail.m; sourceTree = "<group>"; };
+		441AA0501A9A77710081ADD9 /* FavoritesTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTable.h; sourceTree = "<group>"; };
+		441AA0511A9A77710081ADD9 /* FavoritesTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTable.m; sourceTree = "<group>"; };
 		44B2D1461A97A6810027EB08 /* Livsmedelsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livsmedelsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B2D14A1A97A6810027EB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44B2D14B1A97A6810027EB08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				441A9FA41A97D8E00081ADD9 /* FoodItemCell.m */,
 				441A9FA61A97EFF80081ADD9 /* FoodItemDetail.h */,
 				441A9FA71A97EFF80081ADD9 /* FoodItemDetail.m */,
+				441AA0501A9A77710081ADD9 /* FavoritesTable.h */,
+				441AA0511A9A77710081ADD9 /* FavoritesTable.m */,
 			);
 			path = Livsmedelsapp;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				44B2D1741A97A9EF0027EB08 /* FoodItemsTable.m in Sources */,
 				441A9FA81A97EFF80081ADD9 /* FoodItemDetail.m in Sources */,
 				44B2D14F1A97A6810027EB08 /* AppDelegate.m in Sources */,
+				441AA0521A9A77710081ADD9 /* FavoritesTable.m in Sources */,
 				44B2D14C1A97A6810027EB08 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

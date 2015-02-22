@@ -38,7 +38,14 @@
                         </connections>
                     </tableView>
                     <toolbarItems>
-                        <barButtonItem systemItem="add" id="uIe-wY-j6R"/>
+                        <barButtonItem image="staroutline" id="uIe-wY-j6R">
+                            <connections>
+                                <action selector="favoritesButtonPressed:" destination="7iC-Oy-vIt" id="z9I-rM-4qr"/>
+                                <segue destination="NFA-iC-eQ2" kind="show" identifier="Favorite" id="iaS-d0-4VV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem image="viewdetails" id="H5T-fl-GQA"/>
+                        <barButtonItem image="barchart" id="HFV-a5-Quz"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Livsmedel" id="fwF-VQ-U3V"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -59,6 +66,65 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1486" y="186"/>
+        </scene>
+        <!--Favoriter-->
+        <scene sceneID="aKQ-rx-c0W">
+            <objects>
+                <tableViewController title="Favoriter" id="NFA-iC-eQ2" customClass="FavoritesTable" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dHI-03-rqB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Favorite" textLabel="Avh-0m-Q2s" detailTextLabel="VoZ-pW-Eqb" imageView="IN1-MV-zGh" style="IBUITableViewCellStyleValue1" id="eps-Iv-LKW">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eps-Iv-LKW" id="v3R-RQ-hkS">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Avh-0m-Q2s">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VoZ-pW-Eqb">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="info" id="IN1-MV-zGh">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BkJ-0d-xfc" kind="show" identifier="Detail" id="Uat-1V-k0d"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NFA-iC-eQ2" id="9fa-cM-dXN"/>
+                            <outlet property="delegate" destination="NFA-iC-eQ2" id="b1Y-or-5cB"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem tag="1" enabled="NO" image="starfilled" id="Iaq-CE-chC"/>
+                        <barButtonItem enabled="NO" image="viewdetails" id="TKN-de-WCi"/>
+                        <barButtonItem image="barchart" id="hvb-uA-zin"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Favoriter" id="QF6-lD-2h6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Zmp-ve-1JI">
+                            <connections>
+                                <action selector="adButtonPressed:" destination="NFA-iC-eQ2" id="PJa-sq-Gif"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcg-z4-JYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="816"/>
         </scene>
         <!--Food Item Detail-->
         <scene sceneID="H8J-Mi-cRH">
@@ -224,11 +290,17 @@
                             <constraint firstItem="KFw-86-Iee" firstAttribute="top" secondItem="stg-F8-Z4f" secondAttribute="bottom" constant="8" symbolic="YES" id="zIb-3d-Xvh"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem image="staroutline" id="naP-gI-7u9"/>
+                        <barButtonItem enabled="NO" image="viewdetails" id="6eY-fU-1EC"/>
+                        <barButtonItem image="barchart" id="rNh-el-Khh"/>
+                    </toolbarItems>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="carbsContentLabel" destination="auu-sM-EsV" id="zrk-yY-tRH"/>
                         <outlet property="energyLabel" destination="BIW-2h-3c9" id="0qN-rF-AXK"/>
                         <outlet property="fatContentLabel" destination="Rzj-4a-R6Q" id="7nV-7y-cTf"/>
+                        <outlet property="favoritesButton" destination="naP-gI-7u9" id="IJB-Ka-6bU"/>
                         <outlet property="fibreContentLabel" destination="stg-F8-Z4f" id="lgf-9t-Sqm"/>
                         <outlet property="itemLabel" destination="6Pi-HX-FmF" id="D11-xQ-7g5"/>
                         <outlet property="proteinContentLabel" destination="tDJ-Ub-0UB" id="ftG-eo-bfM"/>
@@ -262,4 +334,14 @@
             <point key="canvasLocation" x="686" y="366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="barchart" width="16" height="16"/>
+        <image name="info" width="16" height="16"/>
+        <image name="starfilled" width="16" height="16"/>
+        <image name="staroutline" width="16" height="16"/>
+        <image name="viewdetails" width="16" height="16"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Uat-1V-k0d"/>
+    </inferredMetricsTieBreakers>
 </document>

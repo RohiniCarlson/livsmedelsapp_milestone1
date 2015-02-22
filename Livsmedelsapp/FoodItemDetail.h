@@ -13,4 +13,7 @@
 
 @property (atomic) FoodItem *item;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *favoritesButton;
+
+
 @end
